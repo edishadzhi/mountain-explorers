@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  height: 190vh;
+}
+
+/* Home Section Background Image */
+.background-image {
+  height: 100vh;
+  width: 100vw;
+  background: url(../img/landscape-3.jpg);
+  background-repeat: no-repeat;
+  block-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 700px;
+}
+
+/* Navigation */
+.nav-colored {
+  background-color: rgb(12, 12, 12) !important;
+}
+
+.nav-transparent {
+  background-color: transparent;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.row {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Home Section Text */
+.title {
+  font-family: "Varela Round", sans-serif;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+/* Footer && Contact Section */
+
+#contact-section {
+  height: 50vh;
+}
+
+#main-footer {
+  height: 40vh;
+}
+
+.card {
+  border: none;
+  background-color: transparent;
+}
+
+input[type="email"]::placeholder {
+  font-size: 0.9rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.button-contact {
+  letter-spacing: 0.2rem;
+}
+
+/* Footer && Contact Section Background Image */
+
+.bottom-bg-image {
+  z-index: -1;
+  position: relative;
+  bottom: 90vh;
+  left: 0;
+  height: 90vh;
+  width: 100vw;
+  background: url(../img/landscape-4.jpg);
+  background-repeat: no-repeat;
+  block-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+}
+
+.bottom-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 500px;
+}
+
+/* Fixing Home Section Text On Smaller Devices */
+
+@media (max-height: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-height: 400px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    display: none;
+  }
+}
+
+@media (max-width: 250px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+}
